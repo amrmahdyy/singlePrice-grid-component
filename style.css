@@ -1,0 +1,91 @@
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  color: white;
+}
+.primary-cyan {
+  color: hsl(179, 62%, 43%);
+}
+.primary-bright-yellow {
+  color: hsl(71, 73%, 54%);
+}
+.neutral-light-gray {
+  color: hsl(204, 43%, 93%);
+}
+.neutral-grayish-blue {
+  color: hsl(218, 22%, 67%);
+}
+.container {
+  max-width: 1100px;
+  margin: 0px auto;
+}
+header {
+  min-height: 200px;
+  margin-top: 30px;
+  /* margin: 30px 0px; */
+  padding: 0px 30px;
+}
+header .info {
+  padding-right: 20px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#monthlySubscription {
+  padding: 30px 30px;
+  background-color: hsl(179, 62%, 43%);
+}
+
+#monthlySubscription .price {
+  display: inline;
+  color: white;
+  font-size: 40px;
+
+  position: relative;
+  top: 10px;
+}
+#monthlySubscription .duration {
+  margin: 5px;
+}
+#monthlySubscription span {
+  /* */
+  padding: 10px 0px;
+}
+
+main #monthlySubscription .signupBtn {
+  display: block;
+  margin-top: 40px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding: 15px 0px;
+  background-color: hsl(71, 73%, 54%);
+  border-radius: 10px;
+}
+main #monthlySubscription .signupBtn:hover {
+  background-color: hsl(71, 68%, 52%);
+}
+main #whyUs {
+  background-color: hsl(179, 55%, 57%);
+  padding: 30px;
+}
+main #whyUs p {
+  padding-right: 50px;
+  line-height: 150%;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+footer a {
+  color: black;
+  text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
